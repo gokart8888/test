@@ -31,14 +31,14 @@ namespace XFListView1.ViewModels
         #endregion
 
         #region 姓名
-        private string _姓名;
+        private string _;
         /// <summary>
         /// 姓名
         /// </summary>
         public string 姓名
         {
-            get { return this._姓名; }
-            set { this.SetProperty(ref this._姓名, value); }
+            get { return this._; }
+            set { this.SetProperty(ref this._, value); }
         }
         #endregion
 
@@ -72,10 +72,8 @@ namespace XFListView1.ViewModels
                     oldname = OldName,
                     newname = 姓名,
                 });
+                await _navigationService.GoBackAsync();
 
-                NavigationParameters fooPara = new NavigationParameters();
-                fooPara.Add("Stud", "");
-                await _navigationService.GoBackAsync(fooPara);
 
             });
             #endregion

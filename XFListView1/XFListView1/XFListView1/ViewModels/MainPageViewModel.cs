@@ -47,6 +47,12 @@ namespace XFListView1.ViewModels
         private readonly IEventAggregator _eventAggregator;
         public DelegateCommand 點選項目Command { get; set; }
 
+
+        //public DelegateCommand 刪除Command { get; set; }
+
+        public DelegateCommand<學生> 刪除Command { get; set; }
+
+
         private readonly INavigationService _navigationService;
         public MainPageViewModel(INavigationService navigationService,
             IEventAggregator eventAggregator)
@@ -61,11 +67,26 @@ namespace XFListView1.ViewModels
                 await _navigationService.NavigateAsync("DetailPage", fooPara);
             });
 
+            //刪除Command = new DelegateCommand(()
+            //    =>
+            //{
+            //    int foo = 0;
+            //});
+
+            刪除Command = new DelegateCommand<學生>(x =>
+            {
+                var fooObj = 學生s.FirstOrDefault(y => y.姓名 == x.姓名);
+                if(fooObj!=null)
+                {
+                    學生s.Remove(fooObj);
+                }
+            });
+
             _eventAggregator.GetEvent<更新學生資料Event>()
                 .Subscribe(s =>
             {
                 var fooObj = 學生s.FirstOrDefault(x => x.姓名 == s.oldname);
-                if (fooObj != null)
+                if(fooObj!=null)
                 {
                     fooObj.姓名 = s.newname;
                 }
