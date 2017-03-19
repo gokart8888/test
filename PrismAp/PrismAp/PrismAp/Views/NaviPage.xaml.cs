@@ -7,6 +7,9 @@ namespace PrismAp.Views
         public NaviPage()
         {
             InitializeComponent();
+            this.Title = "TRY";
+            this.BarBackgroundColor = Color.Green;
+            this.BarTextColor = Color.White;
         }
     }
 }

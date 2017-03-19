@@ -6,11 +6,11 @@
              x:Class="PrismAp.Views.MDPage">
 
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu" >
+
+        <ContentPage Title="功能表" BackgroundColor="Pink">
             <StackLayout
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                >
+                VerticalOptions="Start"
+                HorizontalOptions="Center">
                 <Button Text="P1" Command="{Binding GotoP1Command}}"/>
                 <Button Text="P2" />
             </StackLayout>
