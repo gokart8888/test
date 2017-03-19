@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\sIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PrismAp\PrismAp.csproj">
