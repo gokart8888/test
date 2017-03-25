@@ -7,7 +7,7 @@
 
     <MasterDetailPage.Master>
 
-        <ContentPage Title="功能表" BackgroundColor="Pink" Icon="sicon.png">
+        <ContentPage Title="功能表" BackgroundColor="Pink">
             <StackLayout
                 VerticalOptions="Start"
                 HorizontalOptions="Center">
