@@ -12,17 +12,16 @@ namespace PrismUnityApp2
         {
             InitializeComponent();
 
-            //NavigationService.NavigateAsync("NavigationPage/MainPage?title=Hello%20from%20Xamarin.Forms");
-
-            MainPage = new MainPage();
+            NavigationService.NavigateAsync("LoadingPage");
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
-            Container.RegisterTypeForNavigation<IndexPage>();
-            Container.RegisterTypeForNavigation<IndexPage>();
+            Container.RegisterTypeForNavigation<LoadingPage>();
+            Container.RegisterTypeForNavigation<LoginPage>();
+            Container.RegisterTypeForNavigation<NaviPage>();
+            Container.RegisterTypeForNavigation<ListPage>();
         }
     }
 }

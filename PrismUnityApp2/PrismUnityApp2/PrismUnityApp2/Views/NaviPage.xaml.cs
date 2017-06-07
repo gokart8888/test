@@ -2,9 +2,9 @@
 
 namespace PrismUnityApp2.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class NaviPage : NavigationPage
     {
-        public MainPage()
+        public NaviPage()
         {
             InitializeComponent();
         }

@@ -2,9 +2,9 @@
 
 namespace PrismUnityApp2.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class LoadingPage : ContentPage
     {
-        public MainPage()
+        public LoadingPage()
         {
             InitializeComponent();
         }

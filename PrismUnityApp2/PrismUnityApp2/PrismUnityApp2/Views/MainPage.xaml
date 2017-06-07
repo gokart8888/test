@@ -5,8 +5,20 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="PrismUnityApp2.Views.MainPage"
              Title="MainPage">
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding Title}" />
-        <Button x:Name="btnPage1" Text="切換到 Page1，無法回到上一頁" Clicked="btnPage1_Clicked" />
-    </StackLayout>
+    <Grid>
+        <StackLayout
+      VerticalOptions="Center" HorizontalOptions="Center"
+      Margin="70,0"
+      >
+  
+            <Button Text="明細頁" 
+             Margin="0,40,0,0"
+             HorizontalOptions="Center"
+             BackgroundColor="{StaticResource ToolbarBackgroundColor}"
+             TextColor="{StaticResource ButtonTextColor}"
+             Command="{Binding Btn1Command}"
+             WidthRequest="200"
+                />
+        </StackLayout>
+    </Grid>
 </ContentPage>

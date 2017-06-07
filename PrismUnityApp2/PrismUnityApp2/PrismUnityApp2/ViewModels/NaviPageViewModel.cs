@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace PrismUnityApp2.ViewModels
 {
-    public class IndexPageViewModel : BindableBase
+    public class NaviPageViewModel : BindableBase
     {
-        public IndexPageViewModel()
+        public NaviPageViewModel()
         {
 
         }

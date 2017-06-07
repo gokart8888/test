@@ -3,10 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="PrismUnityApp2.Views.IndexPage">
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding Title}" />
-        <Label Text="" x:Name="lblTest" />
-        <Button x:Name="btnPage2" Text="切換到 Page2" Clicked="btnPage2_Clicked" />
-    </StackLayout>
+             x:Class="PrismUnityApp2.Views.ListPage">
+  
 </ContentPage>
