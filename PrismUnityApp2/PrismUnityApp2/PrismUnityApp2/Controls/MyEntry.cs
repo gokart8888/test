@@ -9,7 +9,7 @@ namespace PrismUnityApp2.Controls
 {
     public class MyEntry : Entry
     {
-        public static readonly BindableProperty PlaceHolderColorProperty = BindableProperty.Create("PlaceholderColorText", typeof(string), typeof(MyEntry), "#cccccc");
+        public static readonly BindableProperty PlaceHolderColorProperty = BindableProperty.Create("PlaceholderColorText", typeof(string), typeof(MyEntry), "#9199a1");
 
         public string PlaceholderColorText
         {

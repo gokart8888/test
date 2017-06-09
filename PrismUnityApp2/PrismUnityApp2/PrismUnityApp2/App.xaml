@@ -6,10 +6,8 @@
   <Application.Resources>
     <!-- Application resource dictionary -->
     <ResourceDictionary>
-      <Color x:Key="PageBackgroundColor">#FFEFD4</Color>
-      <Color x:Key="ToolbarBackgroundColor">#f08915</Color>
-      <Color x:Key="BottomCommandBackgroundColor">#ffcc92</Color>
-      <Color x:Key="ButtonTextColor">#fff</Color>
+      <Color x:Key="ToolbarBackgroundColor">#FFF500</Color>
+      <Color x:Key="ButtonTextColor">#000000</Color>
     </ResourceDictionary>
   </Application.Resources>
 </prism:PrismApplication>
