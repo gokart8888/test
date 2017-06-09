@@ -4,7 +4,7 @@
                 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
                 prism:ViewModelLocator.AutowireViewModel="True"
                 x:Class="PrismUnityApp2.Views.NaviPage"
-                NavigationPage.BarBackgroundColor="{StaticResource ToolbarBackgroundColor}"
+                NavigationPage.BarBackgroundColor="{StaticResource ButtonBackgroundColor1}"
                 NavigationPage.BarTextColor="#FFF"
                 >
   

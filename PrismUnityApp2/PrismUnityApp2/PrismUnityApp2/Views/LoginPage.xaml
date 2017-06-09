@@ -37,22 +37,46 @@
                         <controls:MyEntry Placeholder="請輸入密碼" IsPassword="True" Grid.Row="1" Grid.Column="1" Text="{Binding Password, Mode=TwoWay}" />
                         <Button Text="登入" 
                              Margin="0,30,0,0"
-                             BackgroundColor="{StaticResource ToolbarBackgroundColor}"
+                             BackgroundColor="{StaticResource ButtonBackgroundColor1}"
                              TextColor="{StaticResource ButtonTextColor}"
                              Command="{Binding 登入Command}"
                              Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
-                        
-                        <Button Text="申請加入" 
-                             Margin="0,20,0,0"
-                             BackgroundColor="{StaticResource ToolbarBackgroundColor}"
-                             TextColor="{StaticResource ButtonTextColor}"
-                             Command="{Binding 登入Command}"
-                             Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="33*"/>
+                                    <ColumnDefinition Width="34*"/>
+                                    <ColumnDefinition Width="33*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button Text="申請加入" 
+                                 BackgroundColor="{StaticResource ButtonBackgroundColor1}"
+                                 TextColor="{StaticResource ButtonTextColor}"
+                                 Command="{Binding 登入Command}" 
+                                 Grid.Row="0" Grid.Column="0" />
+                                <Button Text="忘記帳號" 
+                                 BackgroundColor="{StaticResource ButtonBackgroundColor1}"
+                                 TextColor="{StaticResource ButtonTextColor}"
+                                 Command="{Binding 登入Command}"
+                                 Grid.Row="0" Grid.Column="1" />
+                                <Button Text="忘記密碼" 
+                                 BackgroundColor="{StaticResource ButtonBackgroundColor1}"
+                                 TextColor="{StaticResource ButtonTextColor}"
+                                 Command="{Binding 登入Command}"
+                                 Grid.Row="0" Grid.Column="2" />
+                            </Grid>
+
+                        </StackLayout>
+
                     </Grid>
                 </StackLayout>
             </Grid>
         </StackLayout>
-      
+
     </StackLayout>
 
 

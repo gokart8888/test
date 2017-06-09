@@ -14,7 +14,7 @@
             <Button Text="明細頁" 
              Margin="0,40,0,0"
              HorizontalOptions="Center"
-             BackgroundColor="{StaticResource ToolbarBackgroundColor}"
+             BackgroundColor="{StaticResource ButtonBackgroundColor1}"
              TextColor="{StaticResource ButtonTextColor}"
              Command="{Binding Btn1Command}"
              WidthRequest="200"

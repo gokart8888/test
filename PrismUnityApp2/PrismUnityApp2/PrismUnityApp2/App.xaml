@@ -6,7 +6,7 @@
   <Application.Resources>
     <!-- Application resource dictionary -->
     <ResourceDictionary>
-      <Color x:Key="ToolbarBackgroundColor">#FFF500</Color>
+      <Color x:Key="ButtonBackgroundColor1">#FFF500</Color>
       <Color x:Key="ButtonTextColor">#000000</Color>
     </ResourceDictionary>
   </Application.Resources>

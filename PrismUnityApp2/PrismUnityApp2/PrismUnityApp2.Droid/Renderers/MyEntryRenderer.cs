@@ -53,7 +53,6 @@ namespace PrismUnityApp2.Droid.Renderers
                 gradientDrawable.SetStroke(4, colorBlack);
                 gradientDrawable.SetCornerRadius(10.0f);
                 textField.Background = gradientDrawable;
-
             }
         }
     }
