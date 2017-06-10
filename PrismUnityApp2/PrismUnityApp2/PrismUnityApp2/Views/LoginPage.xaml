@@ -25,6 +25,7 @@
                             <RowDefinition/>
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="50"/>
@@ -38,39 +39,40 @@
                         <Button Text="登入" 
                              Margin="0,30,0,0"
                              BackgroundColor="{StaticResource ButtonBackgroundColor1}"
-                             TextColor="{StaticResource ButtonTextColor}"
                              Command="{Binding 登入Command}"
                              Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
 
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="33*"/>
-                                    <ColumnDefinition Width="34*"/>
-                                    <ColumnDefinition Width="33*"/>
-                                </Grid.ColumnDefinitions>
+                        <Button Text="申請加入" 
+                                        BackgroundColor="{StaticResource ButtonBackgroundColor1}"
+                                        Command="{Binding 登入Command}" 
+                                        BorderRadius="50"
+                                        Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" />
 
-                                <Button Text="申請加入" 
-                                 BackgroundColor="{StaticResource ButtonBackgroundColor1}"
-                                 TextColor="{StaticResource ButtonTextColor}"
-                                 Command="{Binding 登入Command}" 
-                                 Grid.Row="0" Grid.Column="0" />
-                                <Button Text="忘記帳號" 
-                                 BackgroundColor="{StaticResource ButtonBackgroundColor1}"
-                                 TextColor="{StaticResource ButtonTextColor}"
-                                 Command="{Binding 登入Command}"
-                                 Grid.Row="0" Grid.Column="1" />
-                                <Button Text="忘記密碼" 
-                                 BackgroundColor="{StaticResource ButtonBackgroundColor1}"
-                                 TextColor="{StaticResource ButtonTextColor}"
-                                 Command="{Binding 登入Command}"
-                                 Grid.Row="0" Grid.Column="2" />
-                            </Grid>
 
-                        </StackLayout>
+
+                        <Grid BackgroundColor="Red" HorizontalOptions="Fill" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="Black">
+                                <Grid BackgroundColor="Blue" HorizontalOptions="FillAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5*"/>
+                                        <ColumnDefinition Width="5*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button Text="忘記帳號" 
+                                        HorizontalOptions="Fill"
+                                        Command="{Binding 登入Command}" 
+                                        Grid.Row="0" Grid.Column="0"/>
+                                    <Button Text="忘記密碼" 
+                                        HorizontalOptions="Fill"
+                                         Command="{Binding 登入Command}"
+                                         Grid.Row="0" Grid.Column="1"/>
+                                </Grid>
+                            </StackLayout>
+                        </Grid>
+
 
                     </Grid>
                 </StackLayout>
