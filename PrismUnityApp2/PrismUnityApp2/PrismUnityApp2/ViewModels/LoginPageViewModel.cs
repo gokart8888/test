@@ -2,6 +2,8 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
+using PrismUnityApp2.Helper;
+using PrismUnityApp2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,14 +53,14 @@ namespace PrismUnityApp2.ViewModels
 
         private async void 登入()
         {
-            //var fooResult = await AppData.DataService.AuthUserAsync(new Models.AuthUser
+            //var result = await AppData.DataService.PostAsync(new AuthUser
             //{
             //    Account = Account,
             //    Password = Password,
-            //});
+            //}, AppData.ApiLogin);
 
-            //if (fooResult.Status == true)
-            if (true)
+            //if (result. == true)
+            if (false)
             {
                 //AppData.Account = Account;
                 //var fooItems = (await AppData.DataService.GetTravelExpensesAsync(AppData.Account)).ToList();
